@@ -102,11 +102,11 @@ h6 {
 }
 .hoverable:hover {
   transform: translateY(-0.1em);
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 5px 10px rgba(122, 102, 103, 0.2);
 }
 .hoverable:active {
   transform: translateY(0);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 10px rgba(122, 102, 103, 0.4);
 }
 .hoverable-children > * {
   transition: all 0.05s ease;
@@ -114,11 +114,11 @@ h6 {
 }
 .hoverable-children > *:hover {
   transform: translateY(-0.1em);
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 5px 10px rgba(122, 102, 103, 0.2);
 }
 .hoverable-children > *:active {
   transform: translateY(0);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 10px rgba(122, 102, 103, 0.4);
 }
 .hoverable-half {
   transition: all 0.05s ease;
@@ -126,11 +126,11 @@ h6 {
 }
 .hoverable-half:hover {
   transform: translateY(-0.05em);
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 5px 10px rgba(122, 102, 103, 0.2);
 }
 .hoverable-half:active {
   transform: translateY(0);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 10px rgba(122, 102, 103, 0.4);
 }
 .hoverable-double {
   transition: all 0.05s ease;
@@ -138,11 +138,11 @@ h6 {
 }
 .hoverable-double:hover {
   transform: translateY(-0.2em);
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 5px 10px rgba(122, 102, 103, 0.2);
 }
 .hoverable-double:active {
   transform: translateY(0);
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 10px rgba(122, 102, 103, 0.4);
 }
 
 .flex {
@@ -192,6 +192,157 @@ h6 {
 .align-bottom {
   display: flex;
   align-content: flex-end;
+}
+
+.page-main {
+  display: grid;
+  grid-template-columns: calc(25vw - 3px) auto;
+  grid-template-areas: "side cont";
+}
+.page-main .sidebar {
+  background-color: #e64c44 !important;
+  color: white;
+  grid-area: side;
+}
+.page-main .content {
+  padding: 1em;
+  background-color: #333333;
+  color: white;
+  grid-area: cont;
+}
+
+#patrician-logo {
+  height: auto;
+  width: 25vw;
+  max-width: 25vw;
+}
+
+.header {
+  overflow: hidden;
+  width: 100vw;
+  color: white;
+  background-color: #c7443a;
+}
+.header h1 {
+  text-align: center;
+}
+.header .header-content {
+  background-color: #9db77a;
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+}
+.header .header-content .pat-left,
+.header .header-content .pat-right {
+  flex: 1;
+  align-self: end;
+}
+.header .header-content .pat-left {
+  display: flex;
+  align-items: flex-end;
+}
+.header .header-content .pat-left svg {
+  transform: translateY(3px) scale(-1, 1) translateX(3px);
+}
+.header .header-content .pat-right {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(2px) translateX(3px);
+}
+
+/* custom scrollbar */
+html > ::-webkit-scrollbar {
+  position: absolute;
+  width: 0.8em;
+  background-color: #333333;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #907b7a;
+}
+
+.description > ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border: 1em solid transparent;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
+}
+
+.footer {
+  height: 7vh;
+  background-color: #c7443a;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.nav-item {
+  transition: all 0.2s ease;
+  display: flex;
+  max-height: 4em;
+  background-color: #c7443a;
+  color: white;
+}
+.nav-item:hover {
+  background-color: #e9625a;
+}
+.nav-item:hover .marker {
+  background-color: #f8cdcb;
+}
+.nav-item.current {
+  color: white;
+  background-color: #333333;
+}
+.nav-item.current .marker {
+  background-color: #cccccc;
+}
+.nav-item .text {
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+  flex: 1;
+}
+.nav-item .text:hover {
+  text-decoration: none;
+}
+.nav-item .marker {
+  transition: all 0.2s ease;
+  background-color: #f5b8b4;
+  width: 1em;
+  max-width: 1em;
+}
+
+.all-analyses {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.all-analyses .youtube-thumbnail {
+  margin: 1em;
+}
+
+.youtube-thumbnail {
+  transition: all 0.2s ease;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #907b7a;
+  width: calc(320px + 2em);
+}
+.youtube-thumbnail:hover {
+  background-color: #a39190;
+}
+.youtube-thumbnail .title {
+  margin-top: 0.5em;
+  color: white;
+  word-wrap: break-word;
 }
 
 /*# sourceMappingURL=style.css.map */

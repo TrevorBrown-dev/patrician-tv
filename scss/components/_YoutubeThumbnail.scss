@@ -1,0 +1,15 @@
+.youtube-thumbnail {
+    transition: all 0.2s ease;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: $color-off-dark;
+    width: calc(320px + 2em);
+    &:hover {
+        background-color: lighten($color-off-dark, 8%);
+    }
+    .title {
+        margin-top: 0.5em;
+        color: $color-light;
+        word-wrap: break-word;
+    }
+}

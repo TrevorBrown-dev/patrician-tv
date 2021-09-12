@@ -1,0 +1,38 @@
+#patrician-logo {
+    height: auto;
+    width: 25vw;
+    max-width: 25vw;
+}
+.header {
+    overflow: hidden;
+    width: 100vw;
+    h1 {
+        text-align: center;
+    }
+    color: $color-light;
+    background-color: $color-primary;
+
+    .header-content {
+        background-color: $color-secondary;
+        display: flex;
+        align-items: center;
+        padding-top: 1em;
+        .pat-left,
+        .pat-right {
+            flex: 1;
+            align-self: end;
+        }
+        .pat-left {
+            display: flex;
+            align-items: flex-end;
+            svg {
+                transform: translateY(3px) scale(-1, 1) translateX(3px);
+            }
+        }
+        .pat-right {
+            display: flex;
+            justify-content: flex-end;
+            transform: translateY(2px) translateX(3px);
+        }
+    }
+}

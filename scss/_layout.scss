@@ -1,0 +1,17 @@
+.page-main {
+    display: grid;
+    grid-template-columns: calc(25vw - 3px) auto;
+    grid-template-areas: 'side cont';
+    // height: 100%;
+    .sidebar {
+        background-color: $color-off-primary !important;
+        color: $color-light;
+        grid-area: side;
+    }
+    .content {
+        padding: 1em;
+        background-color: $color-off-black;
+        color: $color-light;
+        grid-area: cont;
+    }
+}
