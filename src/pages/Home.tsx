@@ -1,6 +1,4 @@
 import { AllAnalyses } from "../components/AllAnalyses";
-import { Header } from "../components/Header/Header";
-import { MostRecentVideo } from "../components/MostRecentVideo";
 
 export const Home: React.FC = () => {
 

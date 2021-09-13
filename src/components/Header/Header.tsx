@@ -1,5 +1,4 @@
 import { LogoTray } from "../LogoTray"
-import { MostRecentVideo } from "../MostRecentVideo"
 import { SpotlightVideo } from "../SpotlightVideo"
 import { Patrician } from "../svg/Patrician"
 

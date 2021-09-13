@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { youtube } from "../apis/youtube";
-import { YoutubeEmbed } from "./YoutubeEmbed";
-import { renderSkeletons, YoutubeThumbnail, YoutubeThumbnailSkeleton } from "./YoutubeThumbnail";
+import { renderSkeletons, YoutubeThumbnail } from "./YoutubeThumbnail";
 
 export const AllAnalyses: React.FC = () => {
     const [videos, setVideos] = useState<JSX.Element[]>([]);

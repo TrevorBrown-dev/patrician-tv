@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 interface NavItemProps {
     to: string;

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useReducer, useState } from "react";
+import { useEffect, useState } from "react";
 import { youtube } from "../apis/youtube";
 import { YoutubeEmbed } from "./YoutubeEmbed";
 
