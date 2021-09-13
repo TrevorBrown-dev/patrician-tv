@@ -10,11 +10,17 @@
         background-color: $color-off-primary !important;
         color: $color-light;
         grid-area: side;
+        @media (max-width: $mq-mobile-l) {
+            display: none;
+        }
     }
     .content {
         padding: 1em;
         background-color: $color-off-black;
         color: $color-light;
         grid-area: cont;
+        @media (max-width: $mq-mobile-l) {
+            grid-column: 1/-1;
+        }
     }
 }

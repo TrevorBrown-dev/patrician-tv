@@ -4,4 +4,9 @@
     color: $color-light;
     text-align: center;
     padding: 1em;
+    #copyright {
+        margin-top: 0.2em;
+        color: $color-off-light;
+        font-size: 0.9em;
+    }
 }

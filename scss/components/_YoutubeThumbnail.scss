@@ -28,3 +28,9 @@
         word-wrap: break-word;
     }
 }
+iframe {
+    @media (max-width: $mq-tablet) {
+        width: 100vw !important;
+        // height: 40vh !important;
+    }
+}

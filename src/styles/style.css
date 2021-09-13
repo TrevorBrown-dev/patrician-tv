@@ -189,6 +189,7 @@ h6 {
 .page-main-container {
   padding-top: 5vh;
 }
+
 .align-bottom {
   display: flex;
   align-content: flex-end;
@@ -206,11 +207,21 @@ h6 {
   color: white;
   grid-area: side;
 }
+@media (max-width: 425px) {
+  .page-main .sidebar {
+    display: none;
+  }
+}
 .page-main .content {
   padding: 1em;
   background-color: #333333;
   color: white;
   grid-area: cont;
+}
+@media (max-width: 425px) {
+  .page-main .content {
+    grid-column: 1/-1;
+  }
 }
 
 #patrician-logo {
@@ -243,6 +254,12 @@ h6 {
   flex: 1;
   align-self: end;
   align-items: end;
+}
+@media (max-width: 1024px) {
+  .header .header-content .pat-left svg,
+.header .header-content .pat-right svg {
+    display: none;
+  }
 }
 .header .header-content .pat-left {
   display: flex;
@@ -352,6 +369,11 @@ html > ::-webkit-scrollbar {
   text-align: center;
   padding: 1em;
 }
+.footer #copyright {
+  margin-top: 0.2em;
+  color: #cccccc;
+  font-size: 0.9em;
+}
 
 .nav-item {
   transition: all 0.2s ease;
@@ -428,6 +450,12 @@ html > ::-webkit-scrollbar {
   margin-top: 0.5em;
   color: white;
   word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    width: 100vw !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

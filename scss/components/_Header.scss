@@ -26,6 +26,11 @@
             flex: 1;
             align-self: end;
             align-items: end;
+            @media (max-width: $mq-laptop) {
+                svg {
+                    display: none;
+                }
+            }
         }
         .pat-left {
             display: flex;
