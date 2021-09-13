@@ -1,6 +1,7 @@
 .page-main {
     position: relative;
     display: grid;
+
     grid-template-columns: calc(25vw - 3px) auto;
     grid-template-areas: 'side cont';
     // height: 100%;
