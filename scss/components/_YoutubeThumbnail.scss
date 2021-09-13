@@ -3,7 +3,11 @@
     padding: 1em;
     border-radius: 10px;
     background-color: $color-off-dark;
-    width: calc(320px + 2em);
+    width: min(calc(320px + 2em), 95vw);
+    img {
+        width: min(320px, calc(95vw - 2em));
+        height: auto;
+    }
     cursor: pointer;
     &:hover {
         background-color: lighten($color-off-dark, 8%);

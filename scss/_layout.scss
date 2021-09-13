@@ -16,6 +16,9 @@
     }
     .content {
         padding: 1em;
+        @media (max-width: $mq-tablet) {
+            padding: 0;
+        }
         background-color: $color-off-black;
         color: $color-light;
         grid-area: cont;

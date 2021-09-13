@@ -218,6 +218,11 @@ h6 {
   color: white;
   grid-area: cont;
 }
+@media (max-width: 768px) {
+  .page-main .content {
+    padding: 0;
+  }
+}
 @media (max-width: 425px) {
   .page-main .content {
     grid-column: 1/-1;
@@ -412,6 +417,16 @@ html > ::-webkit-scrollbar {
   max-width: 1em;
 }
 
+.call-to-action {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .call-to-action {
+    margin: 0.5em;
+    font-size: 1.4em;
+  }
+}
+
 .all-analyses {
   justify-content: center;
   display: flex;
@@ -426,8 +441,12 @@ html > ::-webkit-scrollbar {
   padding: 1em;
   border-radius: 10px;
   background-color: #907b7a;
-  width: calc(320px + 2em);
+  width: min(calc(320px + 2em), 95vw);
   cursor: pointer;
+}
+.youtube-thumbnail img {
+  width: min(320px, calc(95vw - 2em));
+  height: auto;
 }
 .youtube-thumbnail:hover {
   background-color: #a39190;

@@ -1,3 +1,10 @@
+.call-to-action {
+    text-align: center;
+    @media (max-width: $mq-tablet) {
+        margin: 0.5em;
+        font-size: 1.4em;
+    }
+}
 .all-analyses {
     justify-content: center;
     .youtube-thumbnail {
