@@ -239,6 +239,7 @@ h6 {
 }
 .header .header-content .pat-left,
 .header .header-content .pat-right {
+  height: 25em;
   flex: 1;
   align-self: end;
 }
@@ -252,7 +253,6 @@ h6 {
 .header .header-content .pat-right {
   display: flex;
   justify-content: flex-end;
-  height: 25em;
 }
 .header .header-content .pat-right svg {
   transform: translateY(3px) translateX(3px);
