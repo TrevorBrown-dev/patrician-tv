@@ -22,6 +22,7 @@
         padding-top: 1em;
         .pat-left,
         .pat-right {
+            height: 25em;
             flex: 1;
             align-self: end;
         }
@@ -35,7 +36,6 @@
         .pat-right {
             display: flex;
             justify-content: flex-end;
-            height: 25em;
             svg {
                 transform: translateY(3px) translateX(3px);
             }
