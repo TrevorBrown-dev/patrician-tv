@@ -40,3 +40,10 @@
         fill: #ff0000;
     }
 }
+#twitter-logo {
+    transition: all 0.2s ease;
+    fill: #fff;
+    &:hover {
+        fill: #1da1f2;
+    }
+}

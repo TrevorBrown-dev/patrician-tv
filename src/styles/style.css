@@ -322,6 +322,14 @@ html > ::-webkit-scrollbar {
   fill: #ff0000;
 }
 
+#twitter-logo {
+  transition: all 0.2s ease;
+  fill: #fff;
+}
+#twitter-logo:hover {
+  fill: #1da1f2;
+}
+
 .logo-tray {
   padding: 1em;
   display: flex;
@@ -338,7 +346,7 @@ html > ::-webkit-scrollbar {
 
 .footer {
   height: 7vh;
-  background-color: #c7443a;
+  background-color: #7a6667;
   color: white;
   text-align: center;
   padding: 1em;
