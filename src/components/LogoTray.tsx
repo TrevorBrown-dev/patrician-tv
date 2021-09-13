@@ -5,7 +5,7 @@ import { YoutubeLogo } from "./svg/YoutubeLogo";
 export const LogoTray: React.FC = () => {
     return (
         <div className="logo-tray">
-            <a className="logo" title="Youtube" href="https://www.youtube.com/c/PatricianTV">
+            <a className="logo" title="YouTube" href="https://www.youtube.com/c/PatricianTV">
                 <YoutubeLogo />
             </a>
             <a className="logo" title="Patreon" href="https://www.patreon.com/patricianTV">
