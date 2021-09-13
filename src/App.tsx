@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { getMostRecentVideo } from './components/MostRecentVideo';
 const PrivateApp: React.FC = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <div className="page-main">
         <aside className="sidebar">

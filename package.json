@@ -1,5 +1,6 @@
 {
     "name": "patrician-tv",
+    "homepage": "https://trevorbrown-dev.github.io/patrician-tv/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
