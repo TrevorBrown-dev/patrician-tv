@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { youtube } from "../apis/youtube";
 import { YoutubeEmbed } from "./YoutubeEmbed";
-import { YoutubeThumbnail } from "./YoutubeThumbnail";
+import { renderSkeletons, YoutubeThumbnail, YoutubeThumbnailSkeleton } from "./YoutubeThumbnail";
 
 export const AllAnalyses: React.FC = () => {
     const [videos, setVideos] = useState<JSX.Element[]>([]);
@@ -22,12 +22,14 @@ export const AllAnalyses: React.FC = () => {
                 }
                 return <YoutubeThumbnail {...props} key={index} />
             }))
+        }).catch(e => {
+            alert("Something went wrong loading Pat's videos :(");
         })
     }, [])
 
     return (
         <div className="all-analyses">
-            {videos}
+            {(videos.length > 0) ? videos : renderSkeletons(6)}
         </div>
     );
 }

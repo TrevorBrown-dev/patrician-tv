@@ -6,7 +6,10 @@ import './styles/style.css'
 import { Spotlight } from './pages/Spotlight';
 import { TheCult } from './pages/TheCult';
 import { Footer } from './components/Footer';
-export const App: React.FC = () => {
+import { SpotlightContext, SpotlightProps } from './contexts/spotlightContext';
+import { useEffect, useState } from 'react';
+import { getMostRecentVideo } from './components/MostRecentVideo';
+const PrivateApp: React.FC = () => {
   return (
     <Router>
       <Header />
@@ -23,6 +26,20 @@ export const App: React.FC = () => {
       </div>
       <Footer />
     </Router>
+  );
+}
+
+export const App: React.FC = () => {
+  const [spotlight, setSpotlight] = useState<SpotlightProps | null>({ videoId: "", title: "" });
+  useEffect(() => {
+    getMostRecentVideo().then(payload => {
+      setSpotlight(payload);
+    })
+  }, [])
+  return (
+    <SpotlightContext.Provider value={{ spotlight, setSpotlight }}>
+      <PrivateApp />
+    </SpotlightContext.Provider>
   );
 }
 

@@ -1,0 +1,42 @@
+#subscribe-star-logo {
+    .ss-upper-s {
+        transition: all 0.2s ease;
+        fill: #fff;
+    }
+    .ss-lower-s {
+        transition: all 0.2s ease;
+        fill: #e1e1e1;
+    }
+    .ss-outline {
+        transition: all 0.2s ease;
+        stroke: #fff;
+    }
+
+    &:hover {
+        .ss-upper-s {
+            fill: #fff;
+        }
+        .ss-lower-s {
+            fill: #ff4081;
+        }
+        .ss-outline {
+            stroke: #009688;
+        }
+    }
+}
+
+#patreon-logo {
+    transition: all 0.2s ease;
+    fill: white;
+    cursor: pointer;
+    &:hover {
+        fill: #ff424d;
+    }
+}
+#youtube-logo {
+    transition: all 0.2s ease;
+    fill: #fff;
+    &:hover {
+        fill: #ff0000;
+    }
+}

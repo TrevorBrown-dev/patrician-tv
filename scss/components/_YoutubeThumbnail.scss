@@ -4,8 +4,23 @@
     border-radius: 10px;
     background-color: $color-off-dark;
     width: calc(320px + 2em);
+    cursor: pointer;
     &:hover {
         background-color: lighten($color-off-dark, 8%);
+    }
+    .image-placeholder {
+        margin: 0 auto;
+        margin-bottom: 1em;
+        width: 320px;
+        height: 180px;
+        border-radius: 10px;
+        background-color: $color-dark;
+    }
+    .title-placeholder {
+        width: 320px;
+        height: 1.5em;
+        background-color: $color-dark;
+        border-radius: 20px;
     }
     .title {
         margin-top: 0.5em;

@@ -195,9 +195,11 @@ h6 {
 }
 
 .page-main {
+  position: relative;
   display: grid;
   grid-template-columns: calc(25vw - 3px) auto;
   grid-template-areas: "side cont";
+  z-index: 1;
 }
 .page-main .sidebar {
   background-color: #e64c44 !important;
@@ -212,16 +214,18 @@ h6 {
 }
 
 #patrician-logo {
+  position: fixed;
   height: auto;
   width: 25vw;
   max-width: 25vw;
+  z-index: 1;
 }
 
 .header {
   overflow: hidden;
   width: 100vw;
   color: white;
-  background-color: #c7443a;
+  background-color: #7a6667;
 }
 .header h1 {
   text-align: center;
@@ -230,6 +234,7 @@ h6 {
   background-color: #9db77a;
   display: flex;
   align-items: center;
+  height: 25em;
   padding-top: 1em;
 }
 .header .header-content .pat-left,
@@ -247,7 +252,10 @@ h6 {
 .header .header-content .pat-right {
   display: flex;
   justify-content: flex-end;
-  transform: translateY(2px) translateX(3px);
+  height: 25em;
+}
+.header .header-content .pat-right svg {
+  transform: translateY(3px) translateX(3px);
 }
 
 /* custom scrollbar */
@@ -273,6 +281,59 @@ html > ::-webkit-scrollbar {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #cccccc;
+}
+
+#subscribe-star-logo .ss-upper-s {
+  transition: all 0.2s ease;
+  fill: #fff;
+}
+#subscribe-star-logo .ss-lower-s {
+  transition: all 0.2s ease;
+  fill: #e1e1e1;
+}
+#subscribe-star-logo .ss-outline {
+  transition: all 0.2s ease;
+  stroke: #fff;
+}
+#subscribe-star-logo:hover .ss-upper-s {
+  fill: #fff;
+}
+#subscribe-star-logo:hover .ss-lower-s {
+  fill: #ff4081;
+}
+#subscribe-star-logo:hover .ss-outline {
+  stroke: #009688;
+}
+
+#patreon-logo {
+  transition: all 0.2s ease;
+  fill: white;
+  cursor: pointer;
+}
+#patreon-logo:hover {
+  fill: #ff424d;
+}
+
+#youtube-logo {
+  transition: all 0.2s ease;
+  fill: #fff;
+}
+#youtube-logo:hover {
+  fill: #ff0000;
+}
+
+.logo-tray {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+.logo-tray svg {
+  cursor: pointer;
+  height: 3em !important;
+  width: auto !important;
+}
+.logo-tray .logo:not(:last-child) {
+  margin-right: 1em;
 }
 
 .footer {
@@ -335,9 +396,24 @@ html > ::-webkit-scrollbar {
   border-radius: 10px;
   background-color: #907b7a;
   width: calc(320px + 2em);
+  cursor: pointer;
 }
 .youtube-thumbnail:hover {
   background-color: #a39190;
+}
+.youtube-thumbnail .image-placeholder {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 320px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: #7a6667;
+}
+.youtube-thumbnail .title-placeholder {
+  width: 320px;
+  height: 1.5em;
+  background-color: #7a6667;
+  border-radius: 20px;
 }
 .youtube-thumbnail .title {
   margin-top: 0.5em;

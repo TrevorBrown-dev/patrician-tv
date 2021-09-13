@@ -1,7 +1,9 @@
 #patrician-logo {
+    position: fixed;
     height: auto;
     width: 25vw;
     max-width: 25vw;
+    z-index: 1;
 }
 .header {
     overflow: hidden;
@@ -10,12 +12,13 @@
         text-align: center;
     }
     color: $color-light;
-    background-color: $color-primary;
+    background-color: $color-dark;
 
     .header-content {
         background-color: $color-secondary;
         display: flex;
         align-items: center;
+        height: 25em;
         padding-top: 1em;
         .pat-left,
         .pat-right {
@@ -32,7 +35,10 @@
         .pat-right {
             display: flex;
             justify-content: flex-end;
-            transform: translateY(2px) translateX(3px);
+            height: 25em;
+            svg {
+                transform: translateY(3px) translateX(3px);
+            }
         }
     }
 }
