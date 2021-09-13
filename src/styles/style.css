@@ -239,7 +239,7 @@ h6 {
 }
 .header .header-content .pat-left,
 .header .header-content .pat-right {
-  height: 25em;
+  height: 27em;
   flex: 1;
   align-self: end;
 }
