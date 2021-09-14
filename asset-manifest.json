@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/patrician-tv/static/css/main.296a3202.chunk.css",
-    "main.js": "/patrician-tv/static/js/main.86fe7745.chunk.js",
-    "main.js.map": "/patrician-tv/static/js/main.86fe7745.chunk.js.map",
+    "main.css": "/patrician-tv/static/css/main.9080c21f.chunk.css",
+    "main.js": "/patrician-tv/static/js/main.a4581a82.chunk.js",
+    "main.js.map": "/patrician-tv/static/js/main.a4581a82.chunk.js.map",
     "runtime-main.js": "/patrician-tv/static/js/runtime-main.8ac5961e.js",
     "runtime-main.js.map": "/patrician-tv/static/js/runtime-main.8ac5961e.js.map",
-    "static/js/2.7552f742.chunk.js": "/patrician-tv/static/js/2.7552f742.chunk.js",
-    "static/js/2.7552f742.chunk.js.map": "/patrician-tv/static/js/2.7552f742.chunk.js.map",
+    "static/js/2.df51f6af.chunk.js": "/patrician-tv/static/js/2.df51f6af.chunk.js",
+    "static/js/2.df51f6af.chunk.js.map": "/patrician-tv/static/js/2.df51f6af.chunk.js.map",
     "static/js/3.b3ab204f.chunk.js": "/patrician-tv/static/js/3.b3ab204f.chunk.js",
     "static/js/3.b3ab204f.chunk.js.map": "/patrician-tv/static/js/3.b3ab204f.chunk.js.map",
     "index.html": "/patrician-tv/index.html",
-    "static/css/main.296a3202.chunk.css.map": "/patrician-tv/static/css/main.296a3202.chunk.css.map",
-    "static/js/2.7552f742.chunk.js.LICENSE.txt": "/patrician-tv/static/js/2.7552f742.chunk.js.LICENSE.txt"
+    "static/css/main.9080c21f.chunk.css.map": "/patrician-tv/static/css/main.9080c21f.chunk.css.map",
+    "static/js/2.df51f6af.chunk.js.LICENSE.txt": "/patrician-tv/static/js/2.df51f6af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8ac5961e.js",
-    "static/js/2.7552f742.chunk.js",
-    "static/css/main.296a3202.chunk.css",
-    "static/js/main.86fe7745.chunk.js"
+    "static/js/2.df51f6af.chunk.js",
+    "static/css/main.9080c21f.chunk.css",
+    "static/js/main.a4581a82.chunk.js"
   ]
 }
