@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header/Header';
-import { useMostRecentVideo } from './components/MostRecentVideo';
+import { getMostRecentVideo } from './components/MostRecentVideo';
 import { SpotlightContext, SpotlightProps } from './contexts/spotlightContext';
 import { Home } from './pages/Home';
 import './styles/style.css';
@@ -24,7 +24,7 @@ const PrivateApp: React.FC = () => {
 
 export const App: React.FC = () => {
   const [spotlight, setSpotlight] = useState<SpotlightProps | null>({ videoId: "", title: "" });
-  useMostRecentVideo().then(payload => {
+  getMostRecentVideo().then(payload => {
     setSpotlight(payload);
   });
 

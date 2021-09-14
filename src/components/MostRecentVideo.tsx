@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { youtube } from "../apis/youtube";
 import { YoutubeEmbed } from "./YoutubeEmbed";
 
@@ -7,8 +7,8 @@ interface Payload {
     videoId: string;
 }
 
-export const useMostRecentVideo = () => {
-    return useMemo(() => youtube.get('/search', {
+export const getMostRecentVideo = () => {
+    return youtube.get('/search', {
         params: {
             maxResults: '1'
         }
@@ -20,16 +20,19 @@ export const useMostRecentVideo = () => {
         return payload;
     }).catch(e => {
         throw e;
-    }), []);
+    });
 }
 
 export const MostRecentVideo: React.FC = () => {
     const [state, setState] = useState<Payload>({ title: "", videoId: "" });
-    useMostRecentVideo().then((payload) => {
-        setState(payload);
-    }).catch(e => {
-        console.log(e);
-    })
+    useEffect(() => {
+        getMostRecentVideo().then((payload) => {
+            setState(payload);
+        }).catch(e => {
+            console.log(e);
+        })
+
+    }, []);
     if (state.videoId) return <YoutubeEmbed videoId={state.videoId} title={state.title} />
     else return <div>Loading... 🤔</div>;
 
