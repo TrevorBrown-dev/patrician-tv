@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/patrician-tv/static/css/main.ab811a24.chunk.css",
-    "main.js": "/patrician-tv/static/js/main.e586e4f9.chunk.js",
-    "main.js.map": "/patrician-tv/static/js/main.e586e4f9.chunk.js.map",
-    "runtime-main.js": "/patrician-tv/static/js/runtime-main.8ac5961e.js",
-    "runtime-main.js.map": "/patrician-tv/static/js/runtime-main.8ac5961e.js.map",
-    "static/js/2.119965f3.chunk.js": "/patrician-tv/static/js/2.119965f3.chunk.js",
-    "static/js/2.119965f3.chunk.js.map": "/patrician-tv/static/js/2.119965f3.chunk.js.map",
-    "static/js/3.b3ab204f.chunk.js": "/patrician-tv/static/js/3.b3ab204f.chunk.js",
-    "static/js/3.b3ab204f.chunk.js.map": "/patrician-tv/static/js/3.b3ab204f.chunk.js.map",
+    "main.js": "/patrician-tv/static/js/main.f5235e5d.chunk.js",
+    "main.js.map": "/patrician-tv/static/js/main.f5235e5d.chunk.js.map",
+    "runtime-main.js": "/patrician-tv/static/js/runtime-main.8c331ec5.js",
+    "runtime-main.js.map": "/patrician-tv/static/js/runtime-main.8c331ec5.js.map",
+    "static/js/2.37e6fee3.chunk.js": "/patrician-tv/static/js/2.37e6fee3.chunk.js",
+    "static/js/2.37e6fee3.chunk.js.map": "/patrician-tv/static/js/2.37e6fee3.chunk.js.map",
+    "static/js/3.7cab7c84.chunk.js": "/patrician-tv/static/js/3.7cab7c84.chunk.js",
+    "static/js/3.7cab7c84.chunk.js.map": "/patrician-tv/static/js/3.7cab7c84.chunk.js.map",
     "index.html": "/patrician-tv/index.html",
     "static/css/main.ab811a24.chunk.css.map": "/patrician-tv/static/css/main.ab811a24.chunk.css.map",
-    "static/js/2.119965f3.chunk.js.LICENSE.txt": "/patrician-tv/static/js/2.119965f3.chunk.js.LICENSE.txt"
+    "static/js/2.37e6fee3.chunk.js.LICENSE.txt": "/patrician-tv/static/js/2.37e6fee3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ac5961e.js",
-    "static/js/2.119965f3.chunk.js",
+    "static/js/runtime-main.8c331ec5.js",
+    "static/js/2.37e6fee3.chunk.js",
     "static/css/main.ab811a24.chunk.css",
-    "static/js/main.e586e4f9.chunk.js"
+    "static/js/main.f5235e5d.chunk.js"
   ]
 }
