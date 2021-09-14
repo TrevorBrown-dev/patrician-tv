@@ -1,5 +1,3 @@
-import { useContext, useEffect, useState } from "react"
-import { SpotlightContext } from "../../contexts/spotlightContext"
 import { LogoTray } from "../LogoTray"
 import { SpotlightVideo } from "../SpotlightVideo"
 import { Patrician } from "../svg/Patrician"

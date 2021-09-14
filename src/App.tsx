@@ -1,12 +1,11 @@
-import './styles/style.css'
-import { Header } from './components/Header/Header';
-import { NavbarHorizontal, NavbarVertical } from './components/Navbar';
-import { Home } from './pages/Home';
+import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Footer } from './components/Footer';
-import { SpotlightContext, SpotlightProps } from './contexts/spotlightContext';
-import { useEffect, useState } from 'react';
+import { Header } from './components/Header/Header';
 import { useMostRecentVideo } from './components/MostRecentVideo';
+import { SpotlightContext, SpotlightProps } from './contexts/spotlightContext';
+import { Home } from './pages/Home';
+import './styles/style.css';
 const PrivateApp: React.FC = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>

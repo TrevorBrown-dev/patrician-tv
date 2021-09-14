@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { youtube } from "../apis/youtube";
 import { YoutubeEmbed } from "./YoutubeEmbed";
 

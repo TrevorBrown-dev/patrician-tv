@@ -11,7 +11,6 @@ export const AllAnalyses: React.FC = () => {
                 maxResults: "100"
             }
         }).then(res => {
-            console.log("PLAYLIST", res.data);
             setVideos(res.data.items.map((item: any, index: number) => {
                 const props = {
                     src: item.snippet.thumbnails.medium.url,
