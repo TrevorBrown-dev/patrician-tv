@@ -1,0 +1,31 @@
+.navbar {
+    @media (max-width: $mq-tablet) {
+        display: none;
+    }
+}
+.navbar-horizontal {
+    display: flex;
+    .nav-item {
+        @media (max-width: $mq-mobile-s) {
+            font-size: 0.7em;
+        }
+        height: 3.2em;
+        flex-direction: column;
+        .text {
+            flex: 1;
+            // height: 1em;
+            overflow: hidden;
+        }
+        .marker {
+            // flex: 1;
+            height: 0.4em;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+    }
+    background-color: lighten($color-off-black, 5%) !important;
+    color: $color-light;
+    @media (min-width: $mq-tablet) {
+        display: none;
+    }
+}

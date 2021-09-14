@@ -20,6 +20,11 @@
         align-items: center;
         height: 25em;
         padding-top: 1em;
+        @media (max-width: $mq-mobile-s) {
+            .spotlight-video {
+                transform: scale(0.8);
+            }
+        }
         .pat-left,
         .pat-right {
             height: 27em;
@@ -32,6 +37,7 @@
                 }
             }
         }
+
         .pat-left {
             display: flex;
             align-items: flex-end;

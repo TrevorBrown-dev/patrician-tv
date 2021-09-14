@@ -8,7 +8,9 @@
 .all-analyses {
     justify-content: center;
     .youtube-thumbnail {
-        margin: 1em;
+        @media (min-width: $mq-mobile-s) {
+            margin: 1em;
+        }
     }
     display: flex;
     flex-wrap: wrap;

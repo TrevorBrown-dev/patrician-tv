@@ -1,6 +1,6 @@
 import './styles/style.css'
 import { Header } from './components/Header/Header';
-import { Navbar } from './components/Navbar';
+import { NavbarHorizontal, NavbarVertical } from './components/Navbar';
 import { Home } from './pages/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Spotlight } from './pages/Spotlight';
@@ -13,9 +13,10 @@ const PrivateApp: React.FC = () => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Header />
+      <NavbarHorizontal />
       <div className="page-main">
         <aside className="sidebar">
-          <Navbar />
+          <NavbarVertical />
         </aside>
         <div className="content">
           <Route path="/" component={Home} exact />

@@ -203,11 +203,11 @@ h6 {
   z-index: 1;
 }
 .page-main .sidebar {
-  background-color: #e64c44 !important;
+  background-color: #404040 !important;
   color: white;
   grid-area: side;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .page-main .sidebar {
     display: none;
   }
@@ -223,87 +223,10 @@ h6 {
     padding: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .page-main .content {
     grid-column: 1/-1;
   }
-}
-
-#patrician-logo {
-  position: fixed;
-  height: auto;
-  width: 25vw;
-  max-width: 25vw;
-  z-index: 1;
-}
-
-.header {
-  overflow: hidden;
-  width: 100vw;
-  color: white;
-  background-color: #7a6667;
-}
-.header h1 {
-  text-align: center;
-}
-.header .header-content {
-  background-color: #9db77a;
-  display: flex;
-  align-items: center;
-  height: 25em;
-  padding-top: 1em;
-}
-.header .header-content .pat-left,
-.header .header-content .pat-right {
-  height: 27em;
-  flex: 1;
-  align-self: end;
-  align-items: end;
-}
-@media (max-width: 1024px) {
-  .header .header-content .pat-left svg,
-.header .header-content .pat-right svg {
-    display: none;
-  }
-}
-.header .header-content .pat-left {
-  display: flex;
-  align-items: flex-end;
-}
-.header .header-content .pat-left svg {
-  transform: translateY(3px) scale(-1, 1) translateX(3px);
-}
-.header .header-content .pat-right {
-  display: flex;
-  justify-content: flex-end;
-}
-.header .header-content .pat-right svg {
-  transform: translateY(3px) translateX(3px);
-}
-
-/* custom scrollbar */
-html > ::-webkit-scrollbar {
-  position: absolute;
-  width: 0.8em;
-  background-color: #333333;
-}
-
-::-webkit-scrollbar {
-  width: 0.5em;
-  background-color: #907b7a;
-}
-
-.description > ::-webkit-scrollbar-thumb {
-  border: 2px solid transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #999999;
-  border: 1em solid transparent;
-  border-radius: 20px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #cccccc;
 }
 
 #subscribe-star-logo .ss-upper-s {
@@ -351,6 +274,123 @@ html > ::-webkit-scrollbar {
 }
 #twitter-logo:hover {
   fill: #1da1f2;
+}
+
+/* custom scrollbar */
+html > ::-webkit-scrollbar {
+  position: absolute;
+  width: 0.8em;
+  background-color: #333333;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #907b7a;
+}
+
+.description > ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border: 1em solid transparent;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
+}
+
+#patrician-logo {
+  position: fixed;
+  height: auto;
+  width: 25vw;
+  max-width: 25vw;
+  z-index: 1;
+}
+
+.header {
+  overflow: hidden;
+  width: 100vw;
+  color: white;
+  background-color: #7a6667;
+}
+.header h1 {
+  text-align: center;
+}
+.header .header-content {
+  background-color: #9db77a;
+  display: flex;
+  align-items: center;
+  height: 25em;
+  padding-top: 1em;
+}
+@media (max-width: 320px) {
+  .header .header-content .spotlight-video {
+    transform: scale(0.8);
+  }
+}
+.header .header-content .pat-left,
+.header .header-content .pat-right {
+  height: 27em;
+  flex: 1;
+  align-self: end;
+  align-items: end;
+}
+@media (max-width: 1024px) {
+  .header .header-content .pat-left svg,
+.header .header-content .pat-right svg {
+    display: none;
+  }
+}
+.header .header-content .pat-left {
+  display: flex;
+  align-items: flex-end;
+}
+.header .header-content .pat-left svg {
+  transform: translateY(3px) scale(-1, 1) translateX(3px);
+}
+.header .header-content .pat-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.header .header-content .pat-right svg {
+  transform: translateY(3px) translateX(3px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar-horizontal {
+  display: flex;
+  background-color: #404040 !important;
+  color: white;
+}
+.navbar-horizontal .nav-item {
+  height: 3.2em;
+  flex-direction: column;
+}
+@media (max-width: 320px) {
+  .navbar-horizontal .nav-item {
+    font-size: 0.7em;
+  }
+}
+.navbar-horizontal .nav-item .text {
+  flex: 1;
+  overflow: hidden;
+}
+.navbar-horizontal .nav-item .marker {
+  height: 0.4em;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (min-width: 768px) {
+  .navbar-horizontal {
+    display: none;
+  }
 }
 
 .logo-tray {
@@ -432,8 +472,10 @@ html > ::-webkit-scrollbar {
   display: flex;
   flex-wrap: wrap;
 }
-.all-analyses .youtube-thumbnail {
-  margin: 1em;
+@media (min-width: 320px) {
+  .all-analyses .youtube-thumbnail {
+    margin: 1em;
+  }
 }
 
 .youtube-thumbnail {

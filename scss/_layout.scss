@@ -7,10 +7,10 @@
     // height: 100%;
     z-index: 1;
     .sidebar {
-        background-color: $color-off-primary !important;
+        background-color: lighten($color-off-black, 5%) !important;
         color: $color-light;
         grid-area: side;
-        @media (max-width: $mq-mobile-l) {
+        @media (max-width: $mq-tablet) {
             display: none;
         }
     }
@@ -22,7 +22,7 @@
         background-color: $color-off-black;
         color: $color-light;
         grid-area: cont;
-        @media (max-width: $mq-mobile-l) {
+        @media (max-width: $mq-tablet) {
             grid-column: 1/-1;
         }
     }
