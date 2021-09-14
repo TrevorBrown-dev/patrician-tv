@@ -47,3 +47,11 @@
         fill: #1da1f2;
     }
 }
+#discord-logo {
+    transition: all 0.2s ease;
+    transform: scale(0.85);
+    fill: #fff;
+    &:hover {
+        fill: #5865f2;
+    }
+}
